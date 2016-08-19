@@ -1,0 +1,458 @@
+// color
+$color-initial= #fff
+$color-primary= #9b4dca
+$color-secondary= #606c76
+$color-tertiary= #f4f5f6
+$color-quaternary= #d1d1d1
+
+// blockquote
+blockquote
+	border-left: .3rem solid $color-quaternary
+	margin-left: 0
+	margin-right: 0
+	padding: 1rem 1.5rem
+
+	& *:last-child
+		margin: 0
+
+// base
+html
+	box-sizing: border-box
+	font-size: 62.5%
+body
+	color: $color-secondary
+	font-family: 'Apple SD Gothic Neo', NanumGothic, 'Nanum Gothic', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+	font-size: 1.6em // currently ems cause chrome bug misinterpreting rems on body element
+	font-weight: 300
+	letter-spacing: .01em
+	line-height: 1.6
+*,
+*:after,
+*:before
+	box-sizing: inherit
+
+// button
+.단추,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit']
+	background-color: $color-primary
+	border: .1rem solid $color-primary
+	border-radius: .4rem
+	color: $color-initial
+	cursor: pointer
+	display: inline-block
+	font-size: 1.1rem
+	font-weight: 700
+	height: 3.8rem
+	letter-spacing: .1rem
+	line-height: 3.8rem
+	padding: 0 3.0rem
+	text-align: center
+	text-decoration: none
+	text-transform: uppercase
+	white-space: nowrap
+
+	&:hover,
+	&:focus
+		background-color: $color-secondary
+		border-color: $color-secondary
+		color: $color-initial
+		outline: 0
+
+	&.안됨,
+	&[안됨]
+		cursor: default
+		opacity: .5
+
+		&:hover,
+		&:focus
+			background-color: $color-primary
+			border-color: $color-primary
+
+	&.외곽선
+		background-color: transparent
+		color: $color-primary
+
+		&:hover,
+		&:focus
+			background-color: transparent
+			border-color: $color-secondary
+			color: $color-secondary
+
+		&.안됨,
+		&[안됨]
+
+			&:hover,
+			&:focus
+				border-color: inherit
+				color: $color-primary
+
+	&.투명
+		background-color: transparent
+		border-color: transparent
+		color: $color-primary
+
+		&:hover,
+		&:focus
+			background-color: transparent
+			border-color: transparent
+			color: $color-secondary
+
+		&.안됨,
+		&[안됨]
+			&:hover,
+			&:focus
+				color: $color-primary
+
+// Code
+code
+	background: $color-tertiary
+	border-radius: .4rem
+	margin: 0 .2rem
+	padding: .2rem .5rem
+	white-space: nowrap
+
+pre
+	background: $color-tertiary
+	border-left: .3rem solid $color-primary
+	font-family: 'Menlo', 'Consolas', 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', 'Monaco', monospace
+
+	& > code
+		background: transparent
+		border-radius: 0
+		display: block
+		padding: 1rem 1.5rem
+		white-space: pre
+
+// Divider
+hr
+	border: 0
+	border-top: .1rem solid $color-tertiary
+	margin-bottom: 3.5rem
+	margin-top: 3.0rem
+
+// Form
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea,
+select
+	appearance: none
+	background-color: transparent
+	border: .1rem solid $color-quaternary
+	border-radius: .4rem
+	box-shadow: none
+	height: 3.8rem
+	padding: .6rem 1.0rem
+	width: 100%
+
+	&:focus
+		border: .1rem solid $color-primary
+		outline: 0
+
+select
+	padding: .6rem 3rem .6rem 1rem
+
+textarea
+	min-height: 6.5rem
+	padding-bottom: .6rem
+	padding-top: .6rem
+
+label,
+legend
+	display: block
+	font-size: 1.6rem
+	font-weight: 700
+	margin-bottom: .5rem
+
+fieldset
+	border-width: 0
+	padding: 0
+
+input[type='checkbox'],
+input[type='radio']
+	display: inline
+
+.한줄 // label
+	display: inline-block
+	font-weight: normal
+	margin-left: .5rem
+
+// Grid
+.틀
+	margin: 0 auto
+	max-width: 112.0rem
+	padding: 0 2.0rem
+	position: relative
+	width: 100%
+
+.행
+	display: flex
+	flex-direction: column
+	padding: 0
+	width: 100%
+
+	@media (min-width: 40.0rem)
+		flex-direction: row
+		margin-left: -1.0rem
+		width: calc(100% + 2.0rem)
+
+	&.감쌈
+		flex-wrap: wrap
+
+	&.시작
+		align-items: flex-start
+
+	&.종료
+		align-items: flex-end
+
+	&.중앙
+		align-items: center
+
+	&.늘임
+		align-items: stretch
+
+	&.바닥
+		align-items: baseline
+
+	&.붙임
+		padding: 0
+
+		&> .열
+			padding: 0
+
+	.열
+		display: block
+		flex: 1
+		margin-left: 0
+		max-width: 100%
+		width: 100%
+
+		@media (min-width: 40.0rem)
+			margin-bottom: inherit
+			padding: 0 1.0rem
+
+		.머리
+			align-self: flex-start
+
+		.바닥
+			align-self: flex-end
+
+		.중앙
+			align-self: center
+
+		&.틈1-10
+			margin-left: 10%
+
+		&.틈1-5
+			margin-left: 20%
+
+		&.틈1-4
+			margin-left: 25%
+
+		&.틈1-3
+			margin-left: 33.3333%
+
+		&.틈1-2
+			margin-left: 50%
+
+		&.틈2-3
+			margin-left: 66.6666%
+
+		&.틈3-4
+			margin-left: 75%
+
+		&.틈4-5
+			margin-left: 80%
+
+		&.틈9-10
+			margin-left: 90%
+
+		&.칸1-10
+			flex: 0 0 10%
+			max-width: 10%
+
+		&.칸1-5
+			flex: 0 0 20%
+			max-width: 20%
+
+		&.칸1-4
+			flex: 0 0 25%
+			max-width: 25%
+
+		&.칸1-3
+			flex: 0 0 33.3333%
+			max-width: 33.3333%
+
+		&.칸2-5
+			flex: 0 0 40%
+			max-width: 40%
+
+		&.칸1-2
+			flex: 0 0 50%
+			max-width: 50%
+
+		&.칸3-5
+			flex: 0 0 60%
+			max-width: 60%
+
+		&.칸2-3
+			flex: 0 0 66.6666%
+			max-width: 66.6666%
+
+		&.칸3-4
+			flex: 0 0 75%
+			max-width: 75%
+
+		&.칸4-5
+			flex: 0 0 80%
+			max-width: 80%
+
+		&.칸9-10
+			flex: 0 0 90%
+			max-width: 90%
+
+// link
+a
+	color: $color-primary
+	text-decoration: none
+
+	&:hover,
+	&:focus
+		color: $color-secondary
+
+// list
+dl,ol,ul
+	margin-top: 0
+	padding-left: 0
+
+	dl,	ul,	ol
+		font-size: 90%
+		margin: 1.5rem 0 1.5rem 3.0rem
+
+dl
+	list-style: none
+
+ul
+	list-style: circle inside
+
+ol
+	list-style: decimal inside
+
+dt,dd,li
+	margin-bottom: 1.0rem
+
+// spacing
+.단추,button
+	margin-bottom: 1.0rem
+
+input,textarea,select,fieldset
+	margin-bottom: 1.5rem
+
+pre,blockquote,dl,figure,table,p,ul,ol,form
+	margin-bottom: 2.5rem
+
+// table
+table
+	width: 100%
+
+th,
+td
+	border-bottom: .1rem solid #e1e1e1
+	padding: 1.2rem 1.5rem
+	text-align: left
+
+	&:first-child
+		padding-left: 0
+
+	&:last-child
+		padding-right: 0
+
+// typo
+p
+	margin-top: 0
+
+h1,h2,h3,h4,h5,h6
+	font-weight: 300
+	margin-bottom: 2.0rem
+	margin-top: 0
+
+h1
+	font-size: 4.0rem
+	letter-spacing: -.1rem
+	line-height: 1.2
+
+h2
+	font-size: 3.6rem
+	letter-spacing: -.1rem
+	line-height: 1.25
+
+h3
+	font-size: 3.0rem
+	letter-spacing: -.1rem
+	line-height: 1.3
+
+h4
+	font-size: 2.4rem
+	letter-spacing: -.08rem
+	line-height: 1.35
+
+h5
+	font-size: 1.8rem
+	letter-spacing: -.05rem
+	line-height: 1.5
+
+h6
+	font-size: 1.6rem
+	letter-spacing: 0
+	line-height: 1.4
+
+// Larger than mobile screen
+@media (min-width: 40.0rem)
+
+	h1
+		font-size: 5.0rem
+
+	h2
+		font-size: 4.2rem
+
+	h3
+		font-size: 3.6rem
+
+	h4
+		font-size: 3.0rem
+
+	h5
+		font-size: 2.4rem
+
+	h6
+		font-size: 1.5rem
+// image
+img
+	max-width: 100%
+
+// utility
+.오른쪽착
+	float: right
+
+.왼쪽착
+	float: left
+
+// Clear a float with .clearfix
+.떨어져
+	*zoom: 1
+
+	&:after,
+	&:before
+		content: ''
+		display: table
+
+	&:after
+		clear: both
+.숨김,[숨김] { display: none !important }

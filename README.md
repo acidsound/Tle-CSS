@@ -5,6 +5,7 @@
 * "틀"은 정말 간단한 CSS 프레임워크예요.
 * [milligram](http://milligram.github.io/)에서 많이 가져왔지만 조금 달라요.
 * 기본 설정은 거의 호환돼요.
+* [한글코딩](http://xn--bj0bv9kgwxoqf.org/)을 지지합니다.
 
 # 사용 예
 ## jade에서 ([meteor-jade](https://atmospherejs.com/spectrum/jade)랑 같이 사용하세요)

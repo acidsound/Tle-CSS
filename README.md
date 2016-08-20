@@ -8,6 +8,9 @@
 * class이름을 한글로 사용하는게 특징이에요.
 * CSS 용량도 작은데 class이름을 한글로 쓰면 유니코드니까 html도 더 작아지겠죠? :)
 
+# 데모
+[jsbin](http://output.jsbin.com/cisico)
+
 # 사용 예
 ## jade에서 ([meteor-jade](https://atmospherejs.com/spectrum/jade)랑 같이 사용하세요)
 ### 단추

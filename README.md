@@ -11,8 +11,8 @@
 ![압축전송그래프](https://pbs.twimg.com/media/CqX2oC4UkAAUTSA.jpg:large)
 
 # 데모
-[기본요소](http://output.jsbin.com/cisico)
-[로그인예제](http://output.jsbin.com/gavire)
+1. [기본 요소](http://output.jsbin.com/cisico)
+1. [로그인 예제](http://output.jsbin.com/gavire)
 
 # 사용 예
 ## jade에서 ([meteor-jade](https://atmospherejs.com/spectrum/jade)랑 같이 사용하세요)

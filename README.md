@@ -7,9 +7,12 @@
 * [한글코딩](http://xn--bj0bv9kgwxoqf.org/)을 지지합니다.
 * class이름을 한글로 사용하는게 특징이에요.
 * CSS 용량도 작은데 class이름을 한글로 쓰면 유니코드니까 html도 더 작아지겠죠? :)
+* IoT(Internet of Things)에도 적합해요. 왜냐면 압축 전송량이 1kb도 안되거든요 (현재 256byte)
+![압축전송그래프](https://pbs.twimg.com/media/CqX2oC4UkAAUTSA.jpg:large)
 
 # 데모
-[jsbin](http://output.jsbin.com/cisico)
+[기본요소](http://output.jsbin.com/cisico)
+[로그인예제](http://output.jsbin.com/gavire)
 
 # 사용 예
 ## jade에서 ([meteor-jade](https://atmospherejs.com/spectrum/jade)랑 같이 사용하세요)

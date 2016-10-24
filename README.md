@@ -10,6 +10,11 @@
 * IoT(Internet of Things)에도 적합해요. 왜냐면 압축 전송량이 1kb도 안되거든요 (현재 256byte)
 ![압축전송그래프](https://pbs.twimg.com/media/CqX2oC4UkAAUTSA.jpg:large)
 
+# 설치
+https://cdn.rawgit.com/acidsound/Tle-CSS/tree/master/dist 이쪽을 사용하세요.
+```
+<link rel="stylesheet" href="https://cdn.rawgit.com/acidsound/Tle-CSS/master/dist/tle.css">
+```
 # 데모
 1. [기본 요소](http://output.jsbin.com/cisico)
 1. [로그인 예제](http://output.jsbin.com/gavire)

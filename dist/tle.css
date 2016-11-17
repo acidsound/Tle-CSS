@@ -229,6 +229,7 @@ select {
   height: 3.8rem;
   padding: 0.6rem 1rem;
   width: 100%;
+  font-size: 1em;
 }
 input[type='email']:focus,
 input[type='number']:focus,
@@ -345,14 +346,26 @@ input[type='radio'] {
 .행 .열.틈1-4 {
   margin-left: 25%;
 }
+.행 .열.틈3-10 {
+  margin-left: 30%;
+}
 .행 .열.틈1-3 {
   margin-left: 33.3333%;
+}
+.행 .열.틈2-5 {
+  margin-left: 40%;
 }
 .행 .열.틈1-2 {
   margin-left: 50%;
 }
+.행 .열.틈3-5 {
+  margin-left: 60%;
+}
 .행 .열.틈2-3 {
   margin-left: 66.6666%;
+}
+.행 .열.틈7-10 {
+  margin-left: 70%;
 }
 .행 .열.틈3-4 {
   margin-left: 75%;
@@ -375,6 +388,10 @@ input[type='radio'] {
   flex: 0 0 25%;
   max-width: 25%;
 }
+.행 .열.칸3-10 {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
 .행 .열.칸1-3 {
   flex: 0 0 33.3333%;
   max-width: 33.3333%;
@@ -394,6 +411,10 @@ input[type='radio'] {
 .행 .열.칸2-3 {
   flex: 0 0 66.6666%;
   max-width: 66.6666%;
+}
+.행 .열.칸7-10 {
+  flex: 0 0 70%;
+  max-width: 70%;
 }
 .행 .열.칸3-4 {
   flex: 0 0 75%;
@@ -568,13 +589,13 @@ img {
 .떨어져:after {
   clear: both;
 }
-.숨김,
-[숨김] {
-  display: none !important;
-}
 .한가운데 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
+}
+.숨김,
+[숨김] {
+  display: none !important;
 }

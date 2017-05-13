@@ -1,4 +1,4 @@
-# 틀(Tle)-CSS
+# 틀(Tle)-CSS [![Build Status](https://travis-ci.org/acidsound/Tle-CSS.svg)](https://travis-ci.org/acidsound/Tle-CSS)
 최소 지향 한글 CSS 프레임워크 - 2016년 8월 19일에 처음 만들었어요.
 # 특징
 * "틀"은 정말 간단한 CSS 프레임워크예요.
@@ -15,6 +15,12 @@ https://cdn.rawgit.com/acidsound/Tle-CSS/tree/master/dist 이쪽을 사용하세
 ```
 <link rel="stylesheet" href="https://cdn.rawgit.com/acidsound/Tle-CSS/master/dist/tle.css">
 ```
+
+# Meteor에서 설치
+```
+meteor add spectrum:tlecss
+```
+
 # 데모
 1. [기본 요소](http://output.jsbin.com/cisico)
 1. [로그인 예제](http://output.jsbin.com/gavire)

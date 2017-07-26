@@ -22,8 +22,8 @@ meteor add spectrum:tlecss
 ```
 
 # 데모
-1. [기본 요소](http://output.jsbin.com/cisico)
-1. [로그인 예제](http://output.jsbin.com/gavire)
+1. [기본 요소](https://bl.ocks.org/acidsound/a31ef533e6960f81f9de24f7242eea1f)-[프리뷰](https://bl.ocks.org/acidsound/raw/a31ef533e6960f81f9de24f7242eea1f/)
+1. [로그인 예제](https://bl.ocks.org/acidsound/ed3a2d2c21cd00540cc503e7843e5103)
 
 # 사용 예
 ## jade에서 ([meteor-jade](https://atmospherejs.com/spectrum/jade)랑 같이 사용하세요)

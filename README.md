@@ -11,9 +11,9 @@
 ![압축전송그래프](https://pbs.twimg.com/media/CqX2oC4UkAAUTSA.jpg:large)
 
 # 설치
-https://cdn.rawgit.com/acidsound/Tle-CSS/tree/master/dist 이쪽을 사용하세요.
+https://cdn.jsdelivr.net/gh/acidsound/Tle-CSS@master/dist/tle.css 이쪽을 사용하세요.
 ```
-<link rel="stylesheet" href="https://cdn.rawgit.com/acidsound/Tle-CSS/master/dist/tle.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/acidsound/Tle-CSS@master/dist/tle.css">
 ```
 
 # Meteor에서 설치
